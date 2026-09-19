@@ -70,6 +70,15 @@ def rates(sims, correct, t):
     return (float((served & ~correct).sum() / h) if h else float("nan")), float(h / len(sims))
 
 
+def roc_auc(sims, correct):
+    """Threshold-free: P(score of a right match > score of a wrong one), Mann-Whitney form."""
+    pos, neg = sims[correct], sims[~correct]
+    if len(pos) == 0 or len(neg) == 0:
+        return float("nan")
+    ranks = np.argsort(np.argsort(np.concatenate([pos, neg]))) + 1
+    return float((ranks[: len(pos)].sum() - len(pos) * (len(pos) + 1) / 2) / (len(pos) * len(neg)))
+
+
 def best_under_budget(sims, correct):
     ok = [(t, *rates(sims, correct, t)) for t in SWEEP]
     ok = [x for x in ok if not np.isnan(x[1]) and x[1] <= BUDGET]
@@ -92,6 +101,8 @@ for k in ORDER:
             "best_theta_under_2pct_fhr": best_under_budget(s, c),
             "nearest_is_correct": int(c.sum()),
             "median_similarity": float(np.median(s)),
+            "top1_correct_rate": float(c.mean()),
+            "roc_auc": roc_auc(s, c),
         }
     for metric in ("false_hit_rate", "hit_rate"):
         row[f"paired_{metric}_hi_rom_minus_en"] = paired_bootstrap_confusion_metric_diff(

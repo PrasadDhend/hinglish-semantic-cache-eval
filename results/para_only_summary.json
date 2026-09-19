@@ -33,7 +33,9 @@
     0.03162650602409638
    ],
    "nearest_is_correct": 538,
-   "median_similarity": 0.730715274810791
+   "median_similarity": 0.730715274810791,
+   "top1_correct_rate": 0.8102409638554217,
+   "roc_auc": 0.7007877500442556
   },
   "hi_rom": {
    "fhr": NaN,
@@ -67,7 +69,9 @@
     0.0015060240963855422
    ],
    "nearest_is_correct": 301,
-   "median_similarity": 0.39616164565086365
+   "median_similarity": 0.39616164565086365,
+   "top1_correct_rate": 0.45331325301204817,
+   "roc_auc": 0.728883519581194
   },
   "paired_false_hit_rate_hi_rom_minus_en": {
    "metric": "false_hit_rate",
@@ -132,7 +136,9 @@
     0.05421686746987952
    ],
    "nearest_is_correct": 553,
-   "median_similarity": 0.9244197309017181
+   "median_similarity": 0.9244197309017181,
+   "top1_correct_rate": 0.8328313253012049,
+   "roc_auc": 0.7207695941873157
   },
   "hi_rom": {
    "fhr": 0.38073394495412843,
@@ -166,7 +172,9 @@
     0.016566265060240965
    ],
    "nearest_is_correct": 407,
-   "median_similarity": 0.8955442905426025
+   "median_similarity": 0.8955442905426025,
+   "top1_correct_rate": 0.6129518072289156,
+   "roc_auc": 0.694232258434593
   },
   "paired_false_hit_rate_hi_rom_minus_en": {
    "metric": "false_hit_rate",
@@ -231,7 +239,9 @@
     0.19728915662650603
    ],
    "nearest_is_correct": 542,
-   "median_similarity": 0.9269805550575256
+   "median_similarity": 0.9269805550575256,
+   "top1_correct_rate": 0.8162650602409639,
+   "roc_auc": 0.7328201560704132
   },
   "hi_rom": {
    "fhr": 0.3167420814479638,
@@ -265,7 +275,9 @@
     0.0015060240963855422
    ],
    "nearest_is_correct": 453,
-   "median_similarity": 0.8618986010551453
+   "median_similarity": 0.8618986010551453,
+   "top1_correct_rate": 0.6822289156626506,
+   "roc_auc": 0.7171986650345773
   },
   "paired_false_hit_rate_hi_rom_minus_en": {
    "metric": "false_hit_rate",
@@ -330,7 +342,9 @@
     0.17771084337349397
    ],
    "nearest_is_correct": 569,
-   "median_similarity": 0.859431266784668
+   "median_similarity": 0.859431266784668,
+   "top1_correct_rate": 0.8569277108433735,
+   "roc_auc": 0.7604846915178984
   },
   "hi_rom": {
    "fhr": 0.0,
@@ -364,7 +378,9 @@
     0.02710843373493976
    ],
    "nearest_is_correct": 411,
-   "median_similarity": 0.6567956805229187
+   "median_similarity": 0.6567956805229187,
+   "top1_correct_rate": 0.6189759036144579,
+   "roc_auc": 0.706548185761134
   },
   "paired_false_hit_rate_hi_rom_minus_en": {
    "metric": "false_hit_rate",
@@ -429,7 +445,9 @@
     0.022590361445783132
    ],
    "nearest_is_correct": 436,
-   "median_similarity": 0.7103868722915649
+   "median_similarity": 0.7103868722915649,
+   "top1_correct_rate": 0.6566265060240963,
+   "roc_auc": 0.6561242555931113
   },
   "hi_rom": {
    "fhr": 0.2,
@@ -463,7 +481,9 @@
     0.0030120481927710845
    ],
    "nearest_is_correct": 331,
-   "median_similarity": 0.5488763749599457
+   "median_similarity": 0.5488763749599457,
+   "top1_correct_rate": 0.49849397590361444,
+   "roc_auc": 0.6810828955844062
   },
   "paired_false_hit_rate_hi_rom_minus_en": {
    "metric": "false_hit_rate",
@@ -528,7 +548,9 @@
     0.007530120481927711
    ],
    "nearest_is_correct": 392,
-   "median_similarity": 0.7241665124893188
+   "median_similarity": 0.7241665124893188,
+   "top1_correct_rate": 0.5903614457831325,
+   "roc_auc": 0.7053008703481393
   },
   "hi_rom": {
    "fhr": 0.22826086956521738,
@@ -562,7 +584,9 @@
     0.009036144578313253
    ],
    "nearest_is_correct": 355,
-   "median_similarity": 0.6834692656993866
+   "median_similarity": 0.6834692656993866,
+   "top1_correct_rate": 0.5346385542168675,
+   "roc_auc": 0.665007520853275
   },
   "paired_false_hit_rate_hi_rom_minus_en": {
    "metric": "false_hit_rate",
@@ -623,7 +647,9 @@
    },
    "best_theta_under_2pct_fhr": null,
    "nearest_is_correct": 330,
-   "median_similarity": 0.9600178599357605
+   "median_similarity": 0.9600178599357605,
+   "top1_correct_rate": 0.49698795180722893,
+   "roc_auc": 0.6822264561785519
   },
   "hi_rom": {
    "fhr": 0.5978915662650602,
@@ -657,7 +683,9 @@
     0.01355421686746988
    ],
    "nearest_is_correct": 267,
-   "median_similarity": 0.9248112142086029
+   "median_similarity": 0.9248112142086029,
+   "top1_correct_rate": 0.40210843373493976,
+   "roc_auc": 0.6718648289134803
   },
   "paired_false_hit_rate_hi_rom_minus_en": {
    "metric": "false_hit_rate",
