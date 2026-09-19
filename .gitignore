@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+hf_cache/
+.cache/
+results/embeddings/
+*.npy
+*.npz
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

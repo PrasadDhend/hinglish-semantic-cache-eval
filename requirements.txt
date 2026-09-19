@@ -1,0 +1,8 @@
+# sentence-transformers pinned <3.0: newer releases import `datasets` (and
+# `pyarrow`) at top level, which this harness never needs.
+sentence-transformers==2.7.0
+transformers
+torch
+numpy
+matplotlib
+pytest

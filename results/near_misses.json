@@ -1,0 +1,128 @@
+{
+ "model": "bge_m3",
+ "theta": 0.8,
+ "n_probes": 664,
+ "nearest_entry_correct_hinglish": 411,
+ "correct_but_below_theta": 393,
+ "picked": [
+  {
+   "record_id": "account.account_locked__paraphrase__hi_rom__003",
+   "hinglish_probe": "apna account kaise unlock kar sakta hoon?",
+   "same_probe_in_english": "How can I unlock my account?",
+   "nearest_cached_english": "My account is locked, how do I unlock it?",
+   "similarity_hinglish": 0.7977,
+   "similarity_english_version": 0.9571,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "subscription.plan_pricing__paraphrase__hi_rom__003",
+   "hinglish_probe": "subscription ke per month charges kya hain?",
+   "same_probe_in_english": "What are the subscription charges per month?",
+   "nearest_cached_english": "How much does the subscription cost?",
+   "similarity_hinglish": 0.796,
+   "similarity_english_version": 0.9103,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "billing.payment_method_declined__paraphrase__hi_rom__001",
+   "hinglish_probe": "payment gaya nahi, bata raha hai ki mera card decline hua.",
+   "same_probe_in_english": "The payment didn't go through, it says my card was declined.",
+   "nearest_cached_english": "My card was declined during payment.",
+   "similarity_hinglish": 0.7952,
+   "similarity_english_version": 0.9264,
+   "english_version_would_hit": true
+  }
+ ],
+ "next_10_candidates": [
+  {
+   "record_id": "account.account_locked__paraphrase__hi_rom__003",
+   "hinglish_probe": "apna account kaise unlock kar sakta hoon?",
+   "same_probe_in_english": "How can I unlock my account?",
+   "nearest_cached_english": "My account is locked, how do I unlock it?",
+   "similarity_hinglish": 0.7977,
+   "similarity_english_version": 0.9571,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "subscription.plan_pricing__paraphrase__hi_rom__003",
+   "hinglish_probe": "subscription ke per month charges kya hain?",
+   "same_probe_in_english": "What are the subscription charges per month?",
+   "nearest_cached_english": "How much does the subscription cost?",
+   "similarity_hinglish": 0.796,
+   "similarity_english_version": 0.9103,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "billing.payment_method_declined__paraphrase__hi_rom__001",
+   "hinglish_probe": "payment gaya nahi, bata raha hai ki mera card decline hua.",
+   "same_probe_in_english": "The payment didn't go through, it says my card was declined.",
+   "nearest_cached_english": "My card was declined during payment.",
+   "similarity_hinglish": 0.7952,
+   "similarity_english_version": 0.9264,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "technical.clear_cache__paraphrase__hi_rom__001",
+   "hinglish_probe": "app ka cached data main kahan clear karu?",
+   "same_probe_in_english": "Where do I clear cached data for the app?",
+   "nearest_cached_english": "How do I clear the app's cache?",
+   "similarity_hinglish": 0.7949,
+   "similarity_english_version": 0.9289,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "billing.wallet_balance__paraphrase__hi_rom__004",
+   "hinglish_probe": "kya aap bata sakte hain ki in-app wallet balance kaise check karu?",
+   "same_probe_in_english": "Can you tell me how to check my in-app wallet balance?",
+   "nearest_cached_english": "How do I check my wallet balance?",
+   "similarity_hinglish": 0.7927,
+   "similarity_english_version": 0.9216,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "subscription.plan_pricing__paraphrase__hi_rom__002",
+   "hinglish_probe": "subscription ke liye mujhe kitna pay karna hoga?",
+   "same_probe_in_english": "How much do I need to pay for a subscription?",
+   "nearest_cached_english": "How much does the subscription cost?",
+   "similarity_hinglish": 0.7927,
+   "similarity_english_version": 0.9502,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "account.link_bank_account__paraphrase__hi_rom__003",
+   "hinglish_probe": "naya bank account link kar sakta hoon kya?",
+   "same_probe_in_english": "Can I link a new bank account to my account?",
+   "nearest_cached_english": "How do I link my bank account?",
+   "similarity_hinglish": 0.7897,
+   "similarity_english_version": 0.8967,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "orders.multiple_orders_combine__paraphrase__hi_rom__003",
+   "hinglish_probe": "shipping ke liye multiple orders ko merge karna possible hai?",
+   "same_probe_in_english": "Is it possible to merge multiple orders for shipping?",
+   "nearest_cached_english": "Can my separate orders be delivered together?",
+   "similarity_hinglish": 0.7879,
+   "similarity_english_version": 0.8563,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "technical.notification_settings__paraphrase__hi_rom__004",
+   "hinglish_probe": "app mein notification settings kahan hain?",
+   "same_probe_in_english": "Where are the notification settings in the app?",
+   "nearest_cached_english": "How do I change my notification preferences?",
+   "similarity_hinglish": 0.7868,
+   "similarity_english_version": 0.8316,
+   "english_version_would_hit": true
+  },
+  {
+   "record_id": "returns.restocking_fee__paraphrase__hi_rom__001",
+   "hinglish_probe": "mere refund amount mein se ek restocking charge kaata gaya hai.",
+   "same_probe_in_english": "There's a restocking charge taken out of my refund amount.",
+   "nearest_cached_english": "Why was a restocking fee deducted from my refund?",
+   "similarity_hinglish": 0.7863,
+   "similarity_english_version": 0.9325,
+   "english_version_would_hit": true
+  }
+ ]
+}
