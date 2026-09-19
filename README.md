@@ -2,7 +2,7 @@
 
 Does a semantic cache still work when users type romanized Hinglish and the cache holds English answers?
 
-This repo holds a three-way parallel evaluation set of support queries (English, Devanagari Hindi, romanized Hinglish), a small cache harness, and the scripts behind the blog post *My Semantic Cache Didn't Fail on Hinglish. It Switched Off.* [link to follow].
+This repo holds a three-way parallel evaluation set of support queries (English, Devanagari Hindi, romanized Hinglish), a small cache harness, and the scripts behind the blog post [*My Semantic Cache Didn't Fail on Hinglish. It Switched Off.*](https://medium.com/@prasaddhend/my-semantic-cache-didnt-fail-on-hinglish-it-switched-off-1ca9c8b76f28).
 
 It is a companion to the paper *Cache-Hit Reliability Under Romanized Hindi–English Code-Mixed Queries: Isolating Script and Mixing Effects in LLM Semantic Caches* (Arti Patle, Prasad Dhend, Tulsi Choudhari). The paper is a preprint in preparation, not yet submitted anywhere. Citation to follow.
 
