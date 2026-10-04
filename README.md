@@ -57,6 +57,7 @@ pip install -r requirements.txt
 pytest -q                                          # unit tests, no model downloads
 python experiments/exp02_threeway_degradation.py   # all 7 models, all probes -> results/raw/
 python experiments/probes_and_charts.py            # paraphrase-only numbers, near-misses, charts
+python experiments/rank_metrics.py                 # Recall@k / MRR / nDCG@5 vs hit rate on the same vectors (run after the above)
 ```
 
 The first run downloads the seven models from Hugging Face, which takes a few GB. Set `HF_HOME` to point the download somewhere else. Embeddings are cached in `results/embeddings/`, keyed by model and text hash, so re-runs are fast. Every non-timing number reproduces exactly with seed 42.
@@ -66,10 +67,13 @@ The first run downloads the seven models from Hugging Face, which takes a few GB
 ```
 data/          three-way parallel set, seed intents, annotation guidelines
 src/           cache (store, hit/miss decision), dataset loading, embedding registry, metrics + bootstrap stats
-experiments/   exp02 (degradation run) and probes_and_charts.py (blog numbers + charts)
+experiments/   exp02 (degradation run), probes_and_charts.py (post 1 numbers + charts),
+               rank_metrics.py (post 2: ranking metrics vs cache decisions, charts 3-6)
 results/       JSON outputs, the hard-negative note, figures
 tests/         unit tests
 ```
+
+`rank_metrics.py` is blog-side analysis and stays out of `src/`: with one relevant cached entry per probe, Recall@1, MRR and nDCG@5 depend only on the rank of the correct entry, while the cache decision depends only on the top-1 score. It reproduces `para_only_summary.json` exactly (rank-1 counts, hits, median similarity) and exits if it doesn't; `tests/test_rank_metrics.py` guards the same.
 
 The mitigation experiments (transliteration via IndicXlit, per-language thresholds) are not in this repo yet. They'll come with a later post.
 
@@ -78,4 +82,3 @@ The mitigation experiments (transliteration via IndicXlit, per-language threshol
 - **Code:** MIT (see [`LICENSE`](LICENSE)).
 - **Data** (`data/`): CC BY 4.0 (see [`data/LICENSE-DATA.md`](data/LICENSE-DATA.md)).
 
-The code was written with help from Claude. The experiments, analysis and every number are from our runs.
