@@ -58,6 +58,8 @@ pytest -q                                          # unit tests, no model downlo
 python experiments/exp02_threeway_degradation.py   # all 7 models, all probes -> results/raw/
 python experiments/probes_and_charts.py            # paraphrase-only numbers, near-misses, charts
 python experiments/rank_metrics.py                 # Recall@k / MRR / nDCG@5 vs hit rate on the same vectors (run after the above)
+python experiments/embeddinggemma2_dims.py         # EmbeddingGemma 2 at 768/512/256/128 dims, with/without prompt (needs sentence-transformers >= 6 in a separate env)
+python experiments/embeddinggemma2_charts.py       # bootstrap, probe examples, charts 7-9
 ```
 
 The first run downloads the seven models from Hugging Face, which takes a few GB. Set `HF_HOME` to point the download somewhere else. Embeddings are cached in `results/embeddings/`, keyed by model and text hash, so re-runs are fast. Every non-timing number reproduces exactly with seed 42.

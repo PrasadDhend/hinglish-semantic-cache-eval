@@ -1,0 +1,119 @@
+{
+  "bootstrap_recall1_hi_rom": {
+    "eg2_ss768_minus_multilingual_e5": [
+      0.08283132530120474,
+      0.04668674698795183,
+      0.11897590361445787
+    ],
+    "eg2_ss768_minus_bge_m3": [
+      0.14608433734939752,
+      0.10692771084337349,
+      0.1837349397590362
+    ],
+    "eg2_ss768_minus_granite_r2": [
+      0.15210843373493976,
+      0.11144578313253017,
+      0.1912650602409639
+    ],
+    "eg2_np768_minus_eg2_ss768": [
+      -0.01957831325301196,
+      -0.04969879518072284,
+      0.010542168674698815
+    ]
+  },
+  "examples": {
+    "ss768_served_wrong_smallest_gap": [
+      {
+        "probe": "mera order abhi tak kyun nahi aaya? overdue ho chuka hai.",
+        "served_entry": "My order shows delivered but I haven't received it.",
+        "served_sim": 0.8887002468109131,
+        "correct_rank": 2,
+        "correct_sim": 0.8882097601890564,
+        "correct_class": "orders.order_delayed",
+        "correct_entry": "My order is delayed, when will it arrive?"
+      },
+      {
+        "probe": "app mein kuch cheez jaise function karni chahiye waise nahi kar rahi.",
+        "served_entry": "The filters on the app aren't working properly.",
+        "served_sim": 0.8634961843490601,
+        "correct_rank": 3,
+        "correct_sim": 0.8629063367843628,
+        "correct_class": "technical.feature_not_working",
+        "correct_entry": "A specific feature isn't working as expected."
+      },
+      {
+        "probe": "mere order ka tracking status kaafi time se ruka hua hai.",
+        "served_entry": "What is the status of my order?",
+        "served_sim": 0.8828901648521423,
+        "correct_rank": 2,
+        "correct_sim": 0.8821979761123657,
+        "correct_class": "orders.order_not_moving",
+        "correct_entry": "My order tracking hasn't updated in days."
+      },
+      {
+        "probe": "mera refund aane se pehle mujhe kitna wait karna chahiye?",
+        "served_entry": "I haven't received my refund yet.",
+        "served_sim": 0.9082382917404175,
+        "correct_rank": 3,
+        "correct_sim": 0.9072026610374451,
+        "correct_class": "returns.refund_timeline",
+        "correct_entry": "How long does a refund usually take?"
+      },
+      {
+        "probe": "shipping charges na dene ka koi tarika hai?",
+        "served_entry": "Do I have to pay for return shipping?",
+        "served_sim": 0.8721029162406921,
+        "correct_rank": 2,
+        "correct_sim": 0.8709739446640015,
+        "correct_class": "orders.free_shipping_eligibility",
+        "correct_entry": "How do I qualify for free shipping?"
+      },
+      {
+        "probe": "main apni payment ki receipt kaise download karu?",
+        "served_entry": "How do I download my invoice?",
+        "served_sim": 0.9052857160568237,
+        "correct_rank": 2,
+        "correct_sim": 0.9040870666503906,
+        "correct_class": "billing.payment_receipt",
+        "correct_entry": "Where can I find my payment receipt?"
+      }
+    ]
+  },
+  "prompt_flip": {
+    "served_ss": 664,
+    "served_np": 525,
+    "blocked_under_np_but_rank1_correct": 83,
+    "blocked_under_np_and_rank1_wrong": 56
+  },
+  "eg2_ss768": {
+    "served": 664,
+    "wrong": 156,
+    "wrong_with_correct_at_rank_2_to_5": 132
+  },
+  "np_by_dim": {
+    "768": {
+      "served": 525,
+      "rank1": 495,
+      "median_top1": 0.8321296870708466,
+      "median_gap_top1_minus_correct_when_wrong": 0.021977543830871582
+    },
+    "512": {
+      "served": 556,
+      "rank1": 488,
+      "median_top1": 0.8364636301994324,
+      "median_gap_top1_minus_correct_when_wrong": 0.02099570631980896
+    },
+    "256": {
+      "served": 618,
+      "rank1": 484,
+      "median_top1": 0.8518706262111664,
+      "median_gap_top1_minus_correct_when_wrong": 0.020834892988204956
+    },
+    "128": {
+      "served": 664,
+      "rank1": 436,
+      "median_top1": 0.899099200963974,
+      "median_gap_top1_minus_correct_when_wrong": 0.014134585857391357
+    }
+  }
+}
